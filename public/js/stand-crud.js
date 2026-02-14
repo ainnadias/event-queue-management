@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Inisialisasi DataTable
     var table = $('#tableStand').DataTable({
         processing: true,
         serverSide: false,
@@ -82,7 +81,7 @@ $(document).ready(function() {
         });
     });
 
-    // Edit Data (Ambil data ke modal)
+    // Edit Data
     $(document).on('click', '.btn-edit', function() {
         let id = $(this).data('id');
         $.get(`/api/master-stand/${id}`, function(res) {
@@ -94,7 +93,7 @@ $(document).ready(function() {
         });
     });
 
-    // Update Data (Proses simpan perubahan)
+    // Update Data 
     $('#formEditStand').on('submit', function(e) {
         e.preventDefault();
         let id = $('#edit_id').val();

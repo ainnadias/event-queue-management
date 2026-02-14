@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\AntriStand;
-use App\Models\QuotaStand; // Jika perlu list stand untuk edit
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -61,7 +60,6 @@ class AntrianController extends Controller
         ]);
     }
 
-    // UPDATE: Edit Data Antrian (Jika admin perlu merubah data salah)
     public function update(Request $request, $id)
         {
             $validator = Validator::make($request->all(), [
@@ -91,7 +89,6 @@ class AntrianController extends Controller
             }
         }
 
-    // DELETE: Hapus Data
     public function destroy($id)
     {
         try {
