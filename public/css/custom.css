@@ -1,0 +1,253 @@
+/* --- IMPORT FONT  --- */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* --- GLOBAL & TYPOGRAPHY --- */
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #f3f1e5;
+  color: #5d6953; 
+  padding-top: 80px;
+}
+
+/* --- NAVBAR CUSTOMIZATION  --- */
+.navbar-custom {
+  background-color: #f3f1e5; 
+  border: none;
+  box-shadow: none; 
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 600;
+  font-size: 24px;
+  color: #5d6953 !important; 
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: #878f78 ; 
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #5d6953 !important;
+  background-color: transparent !important; 
+}
+
+.btn-create-post {
+  background: linear-gradient(90deg, #bdc6b5 0%, #878f78 50%, #5d6953 100%);
+  border-radius: 28px;
+  border: none;
+  color: #f9f8f2 !important;
+  font-weight: 400;
+  padding: 8px 25px !important;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.btn-create-post:hover {
+  background: transparent;
+  border: 1px solid #5d6953;
+  color: #5d6953 !important;
+  text-decoration: none;
+}
+
+/* ---FORM & PANEL --- */
+.panel-custom {
+  border-radius: 16px;
+  border: 1px solid #5d6953;
+  background: linear-gradient(90deg, rgba(249, 248, 242, 0.5) 0%, rgba(135, 143, 120, 0.31) 28%, rgba(93, 105, 83, 0.31) 50%, rgba(135, 143, 120, 0.29) 70%, rgba(249, 248, 242, 0.5) 100%);
+  box-shadow: none;
+}
+
+.panel-custom .panel-heading {
+  background-color: transparent; 
+  border-bottom: 1px solid rgba(93, 105, 83, 0.2);
+  padding: 20px;
+}
+
+.panel-custom .panel-title {
+  color: #5d6953;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.panel-custom .panel-body {
+  padding: 30px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #5d6953;
+  background-color: #f3f1e5;
+  height: 45px; 
+  color: #5d6953;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #878f78;
+  box-shadow: 0 0 5px rgba(93, 105, 83, 0.3);
+  background-color: #fff;
+}
+
+label {
+  color: #5d6953;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.btn-submit {
+  background: #5d6953;
+  color: #f3f1e5;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  border: 2px solid #5d6953;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background: transparent;
+  color: #5d6953;
+}
+
+.ticket-box {
+  display: none;
+  background: #fff;
+  border: 2px dashed #5d6953; 
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #5d6953;
+}
+
+.ticket-header {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #878f78;
+  letter-spacing: 2px;
+}
+
+.ticket-code {
+  font-size: 42px;
+  font-weight: 800;
+  color: #5d6953;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+
+.ticket-info {
+  background: rgba(135, 143, 120, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #5d6953;
+  margin-top: 80px;
+  padding: 40px 0;
+  color: #f3f1e5;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.mb-4 { margin-bottom: 24px; }
+.mt-4 { margin-top: 24px; }
+.text-center { text-align: center; }
+.text-muted { color: #878f78; }
+
+/* =========================================
+   STYLE TIKET 
+   ========================================= */
+
+body.pdf-layout {
+    background-color: #ffffff !important; 
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: #000 !important; 
+}
+
+.pdf-border {
+    border: 2px dashed #5d6953;
+    padding: 15px;
+    margin: 0 auto;
+    width: 98%;
+    page-break-inside: avoid;
+}
+
+.pdf-title {
+    font-size: 22px !important;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pdf-border p {
+     margin: 5px 0; 
+     font-size: 12px;
+}
+
+.pdf-kode {
+    font-size: 34px !important;
+    font-weight: bold;
+    color: #5d6953;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.pdf-info {
+    margin-top: 15px !important;
+    border-top: 1px solid #eee;
+    padding-top: 15px !important;
+}
+
+.pdf-table {
+    width: 100%;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+.pdf-table td {
+    padding: 5px;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.pdf-label {
+    text-align: right;
+    width: 45%;
+    font-weight: bold;
+    color: #555;
+    padding-right: 15px;
+}
+
+.pdf-value {
+    text-align: left;
+    width: 55%;
+    font-weight: bold;
+    color: #000;
+}
+
+.pdf-footer {
+    margin-top: 20px !important;
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 0;
+}
