@@ -35,24 +35,12 @@ Admin bisa mengelola data pengunjung dan stand melalui dashboard.
 
 ---
 
-## Kode Tiket
-Kode tiket dibentuk otomatis:
-
-```text
-kd_stand + tanggal_pesan(YYYYMMDD) + nomor_antri
-````
-
-Contoh: `FT20260219001` → Stand FT, tanggal 19 Feb 2026, nomor antrian 001.
-
----
-
 ## Tech Stack
 
 * **Backend**: Laravel (PHP 8.x)
 * **Frontend**: Bootstrap 3, jQuery, DataTables, SweetAlert2
 * **PDF Generation**: DomPDF / Laravel PDF package
 * **Database**: MySQL
-* **AJAX**: Untuk CRUD tanpa reload halaman penuh
 
 ---
 
@@ -78,7 +66,7 @@ npm install
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=pameran
+DB_DATABASE={nama_db}
 DB_USERNAME=root
 DB_PASSWORD=
 ```
